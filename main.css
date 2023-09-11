@@ -1,0 +1,146 @@
+:root{
+    --main-color : #777 ;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+.container h1{
+    color: #54535b;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h1 span{
+    color: #4e5162;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+h1 + p {
+    text-align: center;
+    width: 445px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.content-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+@media (max-width:1100px) {
+    .content-cards{
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    h1 {
+        font-size: 28px ;
+        text-align: center;
+    }
+    h1 span{
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    h1 + p {
+        width: 330px;
+        font-size: 19px;
+    }
+}
+
+.block-one ,.block-three{
+    background-color: #fff;
+    padding: 30px;
+    width: 335px;
+    height: 230px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.block-one{
+    border-top: 4px solid #49d1d1 ;
+}
+
+.block-two{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.block-three{
+    border-top: 4px solid #559cee;
+}
+.block-two .card{
+    background-color: #fff;
+    padding: 30px;
+    height: 200px;
+    width: 335px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    position: relative;
+    border-top: 4px solid #ea5551;
+}
+
+.block-two .card:last-child{
+    border-top: 4px solid #fcae4a;
+}
+
+.block-two .card:last-child{
+    margin-top: 30px;
+}
+.card h3{
+    color: #4e5162;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+    width: 270px;
+}
+
+.card .card-img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+
+.card .card-img img{
+    max-width: 100%;
+}
